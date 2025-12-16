@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    #background-color: aquamarine;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    /* background-color: aqua; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navleft{
+    width: 10%;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navlogo{
+   background-color: aqua;
+   padding: 5px 15px;
+}
+.navlogo h2{
+    font-family:;
+}
+
+.navright{
+   /* background-color: bisque; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.themetoggle{
+    width: 10%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbuttons{
+    /* background-color:azure; */
+    width: 80%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbuttons a{
+    text-decoration: none;
+}
