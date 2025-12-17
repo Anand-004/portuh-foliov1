@@ -11,10 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
       rel="stylesheet"
     />
+    
   </head>
+  
   <body>
     <div class="container">
-      <div class="navbar">
+      <div id="navbar">
         <div class="navleft">
           <div class="navlogo">
             <img src="Logo.png" alt="Anand" />
@@ -23,8 +25,8 @@
         <div class="navright">
           <div class="navbuttons">
             <a href="#home">Home</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
           </div>
           <div class="themetoggle">
             <button>theme</button>
@@ -43,8 +45,20 @@
             <marquee behavior="scroll" direction="right"><h2>HELLO WORLD</h2></marquee>
           </div>
         </div>
-        <div class="homebuttons"></div>
+        <div class="homebuttons">
+            <div class="hbleft">
+                <button>Hire ME ! plzz</button>
+                <button>Projects</button>
+            </div>
+            <div class="hbright">
+                <button>Lets Connect</button>
+            </div>
+        </div>
       </div>
+      <div id="about"></div>
+      <div id="contact"></div>
+      <div id="footer"></div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
