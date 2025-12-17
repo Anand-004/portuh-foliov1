@@ -1,60 +1,177 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.container{
-    width: 100%;
-    height: 100vh;
-    #background-color: aquamarine;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.navbar{
-    width: 100%;
-    height: 60px;
-    /* background-color: aqua; */
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    
-}
-.navleft{
-    width: 10%;
-    background-color: beige;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.navlogo{
-   background-color: aqua;
-   padding: 5px 15px;
-}
-.navlogo h2{
-    font-family:;
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.navright{
-   /* background-color: bisque; */
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
+.container {
+  width: 100%;
+  height: 100vh;
+  /* background-color: aquamarine; */
 }
 
-.themetoggle{
-    width: 10%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+/* ----------------------------------------------------------------------- navbar ----------------------------------------------------------------- */
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  /* background-color: aqua; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+.navleft {
+  width: 10%;
+  /* background-color: beige; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navlogo {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  width: 100px;
 }
 
-.navbuttons{
-    /* background-color:azure; */
-    width: 80%;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
+.navlogo img {
+  width: 100%;
 }
 
-.navbuttons a{
-    text-decoration: none;
+.navright {
+  /* background-color: bisque; */
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
 }
+
+.themetoggle {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}
+
+.navbuttons {
+  /* background-color:aquamarine; */
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbuttons a {
+  text-decoration: none;
+  color: black;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 20px;
+  border: 2px solid black;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.navbuttons a:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 0;
+}
+
+.themetoggle button {
+  background-color: transparent;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+/*---------------------------------------------------------------- Home-------------------------------------------------------------------------------  */
+
+#home {
+  height: 100vh;
+  width: 100%;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homecontent {
+  width: 95%;
+  height: 400px;
+  /* background-color: beige; */
+  border-radius: 50px;
+  border: 2px solid black;
+  display: flex;
+  /* padding: 10px; */
+}
+.contentleft {
+  background-color: blanchedalmond;
+  height: 100%;
+  width: 70%;
+}
+
+.contentright {
+  /* background-color: bisque; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  width: 30%;
+}
+
+.contentright img {
+  width: 100%;
+}
+
+.homescroll {
+  width: 100%;
+  height: 50px;
+  /* background-color: blue; */
+  border: solid black;
+  border-width: 4px 0px;
+  /* padding: 5px; */
+  display: flex;
+  align-items: center;
+}
+
+.marq {
+  font-family: "Jersey 10", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight:lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
+}
+
+/* .marq  h2 {
+  width:130px;
+  background-color: blueviolet;
+  overflow: hidden;
+  transform: translateX(-90%);
+  animation: scroll-right 10s linear infinite;
+  white-space: nowrap
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-90%);
+  }
+
+  to {
+    transform: translateX(90%);
+  }
+} */
