@@ -1,5 +1,20 @@
+function check() {
+  alert("js Connected Successfully ...!");
+}
+
+// check()
+
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+var overlay =document.getElementById("overlay")
+
+function showoverlay(){
+  overlay.style.display="flex";
+}
+function hideoverlay(){
+  overlay.style.display="none";
+}
+
+window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0px";
@@ -7,4 +22,4 @@ window.onscroll = function() {
     document.getElementById("navbar").style.top = "-65px";
   }
   prevScrollpos = currentScrollPos;
-}
+};

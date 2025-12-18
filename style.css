@@ -10,6 +10,12 @@
   font-style: normal;
 }
 
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -78,7 +84,7 @@
   color: black;
   font-family: "Jersey 10", sans-serif;
   font-size: 20px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 70px;
   height: 30px;
   display: flex;
@@ -89,6 +95,7 @@
 .navbuttons a:hover {
   transform: scale(1.05);
   box-shadow: 3px 3px 0;
+  border: 1px solid black;
 }
 
 .themetoggle button {
@@ -124,6 +131,35 @@
   /* background-color: blanchedalmond; */
   height: 100%;
   width: 70%;
+  padding: 30px;
+  padding-left: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.heroname {
+  /* background-color: aqua; */
+  display: flex;
+  margin: 10px 0;
+  /* align-items: center; */
+  /* width: 30%; */
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-size: 20px;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.heroname h2 {
+  margin: 30px 0 10px 0;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+.herodetails {
+  /* background-color: aquamarine; */
+  display: flex;
+  margin-top: 60px;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 24px;
 }
 
 .contentright {
@@ -143,8 +179,9 @@
 .homescroll {
   width: 100%;
   height: 50px;
-  /* background-color: blue; */
+  background-color: black;
   border: solid black;
+  color: white;
   border-width: 4px 0px;
   /* padding: 5px; */
   display: flex;
@@ -185,7 +222,7 @@
   }
 } */
 
-.homebuttons{
+.homebuttons {
   width: 100%;
   height: 100px;
   /* background-color: blueviolet; */
@@ -194,7 +231,7 @@
   align-items: center;
 }
 
-.homebuttons button{
+.homebuttons button {
   width: 150px;
   height: 50px;
   background-color: transparent;
@@ -204,34 +241,112 @@
   transition: all 0.3s ease;
 }
 
-.homebuttons button:hover{
+.homebuttons button:hover {
   transform: scale(1.05);
   transform: translateX(3px);
   transform: translateY(-3px);
   box-shadow: 3px 3px 0;
+  /* border: 2px solid black; */
 }
 
-.hbleft{
+.hbleft {
   /* background-color: brown; */
   width: 50%;
   display: flex;
   justify-content: space-evenly;
 }
 
-
 /* ------------------------------------------------------------About Section --------------------------------------------- */
 
-#about{
+#about {
   width: 100%;
   height: 100vh;
-  background-color: aqua;
+  background-color: black;
+  padding: 20px;
 }
 
+.aboutcontainer {
+  width: 100%;
+  height: 100%;
+  /* background-color: aquamarine; */
+  border: 3px solid black;
+  border-radius: 10px;
+}
+.abouttop {
+  width: 100%;
+  height: 4%;
+  /* background-color: bisque; */
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+}
 
+.abouttopbuttons {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: aqua; */
+  width: 70px;
+}
+
+.redbutton,
+.yellowbutton,
+.greenbutton {
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+}
+.redbutton {
+  background-color: red;
+}
+.yellowbutton {
+  background-color: yellow;
+}
+.greenbutton {
+  background-color: lightgreen;
+}
+
+.abouttopdet {
+  /* background-color: aqua; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-right: 70px;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 24px;
+  font-weight: 10;
+}
+
+.aboutsec {
+  /* background-color: bisque; */
+  height: 96%;
+  width: 100%;
+}
+
+.aboutwin {
+  height: 90%;
+  width: 100%;
+  background-color: aqua;
+}
+.aboutdock {
+  height: 10%;
+  width: 100%;
+  /* background-color: beige; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dockdiv {
+  height: 60px;
+  width: 500px;
+  border: 2px solid black;
+  background-color: azure;
+  border-radius: 10px;
+}
 
 /* -----------------------------------------------------------Contact Section--------------------------------------------- */
 
-#contact{
+#contact {
   width: 100%;
   height: 100vh;
   background-color: azure;
@@ -239,9 +354,61 @@
 
 /* -----------------------------------------------------------Footer----------------------------------------------------- */
 
-#footer{
+#footer {
   width: 100%;
   height: 20vh;
   background-color: blanchedalmond;
+}
 
+/* --------------------------------------------------------overlay------------------------------------------------------ */
+
+#overlay{
+  position:absolute;
+  top: 0;
+  display:none;
+  width: 100%;
+  height: 100vh;
+  background-color:rgba(0,0,0, 0.8);
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+
+.connectdiv{
+  width: 700px;
+  height: 250px;
+  background-color: white;
+  /* margin: 100px; */
+  position: absolute;
+  border-radius: 10px;
+}
+
+.connectdivtop{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+   font-family: "Jersey 10", sans-serif;
+    font-size: 24px;
+    border-bottom: 2px solid black;
+}
+.connectdivtop button{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color:transparent;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 20px;
+  border: 2px solid black;
+  /* color: white; */
+ 
+ 
+  
+
+}
+
+.connectdivtop button:hover{
+    background-color: black;
+    color: white;
 }
