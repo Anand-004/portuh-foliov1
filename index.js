@@ -5,13 +5,13 @@ function check() {
 // check()
 
 var prevScrollpos = window.pageYOffset;
-var overlay =document.getElementById("overlay")
+var overlay = document.getElementById("overlay");
 
-function showoverlay(){
-  overlay.style.display="flex";
+function showoverlay() {
+  overlay.style.display = "flex";
 }
-function hideoverlay(){
-  overlay.style.display="none";
+function hideoverlay() {
+  overlay.style.display = "none";
 }
 
 window.onscroll = function () {

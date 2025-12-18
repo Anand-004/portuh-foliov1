@@ -16,7 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -77,26 +83,30 @@
           </div>
         </div>
       </div>
-       <div id="overlay">
+      <div id="overlay">
         <div class="connectdiv">
           <div class="connectdivtop">
-            <p>Lets Connect ! </p>
-                       <button onclick="hideoverlay()">X</button>
-
+            <p>Lets Connect !</p>
+            <button onclick="hideoverlay()">X</button>
           </div>
           <div class="connectdivbottom">
-              <div class="connecticons">
-                <i class="fa-brands fa-linkedin"></i>
-              </div>
+            <div class="connecticons">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-blogger"></i></a>
+            </div>
           </div>
         </div>
-       
       </div>
       <div id="about">
         <div class="aboutcontainer">
           <div class="abouttop">
             <div class="abouttopbuttons">
-              <div class="redbutton"></div>
+              <div class="redbutton" title="close menu"></div>
               <div class="yellowbutton"></div>
               <div class="greenbutton"></div>
             </div>
@@ -105,16 +115,35 @@
             </div>
           </div>
           <div class="aboutsec">
-            <div class="aboutwin"></div>
+            <div class="aboutwin">
+              <p>
+                <!-- <li title="skill section">skill</li>
+                <li>education</li>
+                <li>experience</li>
+                <li>tools</li>
+                <li>qualities</li>
+                <li>resume</li> -->
+              </p>
+            </div>
             <div class="aboutdock">
-              <div class="dockdiv"></div>
+              <div class="dockdiv">
+                <!-- <i class="fa-brands fa-microsoft"></i> -->
+                <i class="fa-solid fa-brain" title="Skills"></i>
+                <i
+                  class="fa-solid fa-book"
+                  title="Education and Acheivements"
+                ></i>
+                <i class="fa-solid fa-flask" title="Experience"></i>
+                <i class="fa-solid fa-screwdriver-wrench" title="Tools"></i>
+                <i class="fa-solid fa-star" title="Qualities"></i>
+                <i class="fa-solid fa-folder-closed" title="Files"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div id="contact"></div>
       <div id="footer"></div>
-     
     </div>
     <script src="index.js"></script>
   </body>
