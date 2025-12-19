@@ -56,6 +56,13 @@ function hidequalities() {
 function hidefiles() {
   filestab.style.display = "none";
 }
+function construction() {
+  alert("Project Page is Still Under Construction");
+}
+
+function submission() {
+  alert("Message Sent Successfully ..!");
+}
 
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;

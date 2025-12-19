@@ -39,9 +39,9 @@
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </div>
-          <div class="themetoggle">
+          <!-- <div class="themetoggle">
             <button>theme</button>
-          </div>
+          </div> -->
         </div>
       </div>
       <div id="home">
@@ -55,10 +55,11 @@
 
             <div class="herodetails">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                deleniti fuga porro nam. Itaque ab dicta similique qui quaerat
-                veniam, quam, enim quia ullam consequatur error autem facere
-                sed? Nam.
+                I am a Computer Science Engineering student focused on
+                Cybersecurity, with a strong interest in Blue Team operations. I
+                work with networking, Linux, SOC workflows, and SIEM tools, and
+                I am passionate about learning new technologies and Engineering
+                secure systems.
               </p>
             </div>
           </div>
@@ -75,8 +76,8 @@
         </div>
         <div class="homebuttons">
           <div class="hbleft">
-            <button>Hire ME ! plzz</button>
-            <button>Projects</button>
+            <button><a href="resumev1.pdf">Hire me ! plzz</a></button>
+            <button onclick="construction()">Projects</button>
           </div>
           <div class="hbright">
             <button onclick="showoverlay()">Lets Connect</button>
@@ -91,13 +92,25 @@
           </div>
           <div class="connectdivbottom">
             <div class="connecticons">
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
-              <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-              <a href=""><i class="fa-brands fa-github"></i></a>
-              <a href=""><i class="fa-solid fa-envelope"></i></a>
-              <a href=""><i class="fa-brands fa-blogger"></i></a>
+              <a href="https://www.linkedin.com/in/anand-saravanan-849184285/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/notreal_anand/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.instagram.com/notreal_anand/"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/notreal_anand/"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://github.com/Anand-004"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://www.instagram.com/notreal_anand/"
+                ><i class="fa-brands fa-blogger"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -203,7 +216,7 @@
                     </div>
                   </div>
                   <div class="skillstabbottom"></div>
-                  </div>
+                </div>
                 <div class="skillstab" id="files">
                   <div class="skillstop">
                     <div class="skillstopbuttons">
@@ -265,14 +278,40 @@
       <div id="contact">
         <div class="contactleft">
           <div class="formdiv">
-            <form action="">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="c905b974-de03-4586-a5af-436f894daaa0"
+              />
               <label for="name">Name</label>
-              <input class="name" type="text" id="name">
-              <label for="subject">Subject</label>
-              <input class="subject" type="text" id="subject">
+              <input
+                class="name"
+                name="name"
+                placeholder="Your Name"
+                type="text"
+                id="name"
+                required
+              />
+              <label for="email">Email</label>
+              <input
+                class="subject"
+                type="email"
+                name="email"
+                placeholder="Your Mail ID"
+                id="subject"
+                required
+              />
               <label for="message">Message</label>
-              <input class="messagebox" type="text" id="message">
-              <button>Send</button>
+              <textarea
+                class="messagebox"
+                type="text"
+                name="message"
+                placeholder="Your Message ..!"
+                id="message"
+                required
+              ></textarea>
+              <button type="submit" onclick="submission()">Send</button>
             </form>
           </div>
         </div>
@@ -280,30 +319,41 @@
           <div class="contactheading">
             <h2>Various Connection options</h2>
             <div class="connecticons">
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
-              <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-              <a href=""><i class="fa-brands fa-github"></i></a>
-              <!-- <a href=""><i class="fa-solid fa-envelope"></i></a> -->
-              <a href=""><i class="fa-brands fa-blogger"></i></a>
+              <a href="https://www.linkedin.com/in/anand-saravanan-849184285/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/notreal_anand/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.instagram.com/notreal_anand/"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/notreal_anand/"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://github.com/Anand-004"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <!-- <a href="#contact"><i class="fa-solid fa-envelope"></i></a> -->
+              <a href="https://www.instagram.com/notreal_anand/"
+                ><i class="fa-brands fa-blogger"></i
+              ></a>
             </div>
-           
           </div>
-           <div class="numbermail">
-              <div class="number">
-                <h3>Mobile :</h3>
-                <p>+91 8838030612</p>
-              </div>
-              <div class="email">
-                <h3>Email :</h3>
-                <p>anandsince2004@gmail.com</p>
-              </div>
-              <div class="number">
-                <h3>Whatsapp :</h3>
-                <p>+91 8838030612</p>
-              </div>
+          <div class="numbermail">
+            <div class="number">
+              <h3>Mobile :</h3>
+              <p>+91 8838030612</p>
             </div>
+            <div class="email">
+              <h3>Email :</h3>
+              <p>anandsince2004@gmail.com</p>
+            </div>
+            <div class="number">
+              <h3>Whatsapp :</h3>
+              <p>+91 8838030612</p>
+            </div>
+          </div>
         </div>
       </div>
       <div id="footer">
@@ -313,10 +363,10 @@
               <p>LINKS</p>
             </div>
             <div class="footerleftbottom">
-              <a href="">Home</a>
-              <a href="">About</a>
-              <a href="">Projects</a>
-              <a href="">Contact</a>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="javascript:void(0)" onclick="construction()">Projects</a>
+              <a href="#contact">Contact</a>
             </div>
           </div>
           <div class="footertopright">
@@ -324,13 +374,14 @@
               <p>SOCIAL</p>
             </div>
             <div class="footerrightbottom">
-              <a href="">Github</a>
-              <a href="">Linkedin</a>
-              <a href="">Facebook</a>
-              <a href="">Instagram</a>
-              <a href="">X</a>
+              <a href="https://github.com/Anand-004">Github</a>
+              <a href="https://www.linkedin.com/in/anand-saravanan-849184285/"
+                >Linkedin</a
+              >
+              <a href="https://www.instagram.com/notreal_anand/">Facebook</a>
+              <a href="https://www.instagram.com/notreal_anand/">Instagram</a>
+              <a href="https://www.instagram.com/notreal_anand/">X</a>
             </div>
-
           </div>
         </div>
         <div class="footerbottom">

@@ -5,6 +5,11 @@
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .jersey-10-regular {
   font-family: "Jersey 10", sans-serif;
   font-weight: 400;
@@ -38,7 +43,7 @@
   justify-content: space-between;
   border-bottom: 2px solid black;
   transition: top 0.3s;
-box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 20px -20px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 20px -20px;
 }
 .navleft {
   width: 10%;
@@ -128,7 +133,7 @@ box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 20px -20px;
   border: 2px solid black;
   display: flex;
   /* padding: 10px; */
- box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 .contentleft {
   /* background-color: blanchedalmond; */
@@ -160,7 +165,7 @@ box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 20px -20px;
 .herodetails {
   /* background-color: aquamarine; */
   display: flex;
-  margin-top: 60px;
+  margin-top: 40px;
   font-family: "Jersey 10", sans-serif;
   font-size: 24px;
 }
@@ -358,6 +363,7 @@ box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 20px -20px;
   justify-content: space-evenly;
   align-items: center;
   font-size: 28px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 }
 
 .dockdiv i {
@@ -391,10 +397,8 @@ box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 20px -20px;
   margin: 2px;
   display: none;
 
-
-
-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
 .skillstopbuttons {
@@ -411,10 +415,10 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   width: 100%;
   height: 100vh;
   /* background-color: plum; */
-  display:flex ;
+  display: flex;
 }
 
-.contactleft{
+.contactleft {
   width: 50%;
   height: 100%;
   /* background-color: pink; */
@@ -423,10 +427,10 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   align-items: center;
 }
 
-.formdiv form{
+.formdiv form {
   width: 600px;
   height: 700px;
-  background-color:white;
+  background-color: white;
   border-radius: 20px;
   border: 2px solid black;
   display: flex;
@@ -437,48 +441,52 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   font-size: 20px;
   /* position: relative; */
   box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
-
 }
 
-.formdiv input, .formdiv button{
+.formdiv input,
+.formdiv button,
+.formdiv textarea {
   background-color: transparent;
   border: 2px solid black;
-  color:black;
+  color: black;
   height: 50px;
   font-size: 18px;
   border-radius: 25px;
   padding: 0 10px;
-  
 }
 
-.formdiv button{
+.formdiv button {
   font-family: "Jersey 10", sans-serif;
   font-size: 32px;
 }
 
-.formdiv button:hover{
+.formdiv button:hover {
   color: white;
-  background-color: black ;
+  background-color: black;
 }
-
+.formdiv textarea {
+  padding: 20px;
+}
 .formdiv .messagebox {
   height: 250px;
   /* background-color: blue; */
-  
 }
 
-.formdiv label{
+.formdiv form input::placeholder {
+  font-size: 16px;
+}
+
+.formdiv label {
   color: black;
   border: 2px solid black;
-  width:80px;
+  width: 80px;
   background-color: white;
   border-radius: 15px;
   text-align: center;
   padding: 2px;
 }
 
-
-.contactright{
+.contactright {
   width: 50%;
   height: 100%;
   /* background-color: chocolate; */
@@ -486,12 +494,11 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-   font-family: "Pixelify Sans", sans-serif;
-
+  font-family: "Pixelify Sans", sans-serif;
 }
 
-.contactheading{
-  background-color:white;
+.contactheading {
+  background-color: white;
   width: 90%;
   height: 200px;
   display: flex;
@@ -503,12 +510,12 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   border-radius: 20px;
 }
 
-.contactheading h2{  
+.contactheading h2 {
   border-bottom: 1px solid black;
   padding: 20px;
 }
 
-.numbermail{
+.numbermail {
   background-color: white;
   width: 90%;
   height: 300px;
@@ -522,16 +529,18 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   border: 2px solid black;
 }
 
-.numbermail h3{
+.numbermail h3 {
   font-size: 24px;
 }
 
-.numbermail p{
+.numbermail p {
   font-size: 24px;
   font-family: "Jersey 10", sans-serif;
 }
 
-.number,.email,.whatsapp{
+.number,
+.email,
+.whatsapp {
   width: 90%;
   /* background-color: beige; */
   display: flex;
@@ -539,7 +548,6 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   justify-content: space-between;
   padding: 20px;
   border-bottom: 1px solid black;
-  
 }
 
 /* -----------------------------------------------------------Footer----------------------------------------------------- */
@@ -552,11 +560,10 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   padding: 10px;
   display: flex;
   flex-direction: column;
-    font-family: "Jersey 10", sans-serif;
-
+  font-family: "Jersey 10", sans-serif;
 }
 
-.footertop{
+.footertop {
   height: 60%;
   display: flex;
   justify-content: space-between;
@@ -564,49 +571,46 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24p
   padding: 10px;
 }
 
-.footertopleft{
+.footertopleft {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
 }
 
-.footertopright{
+.footertopright {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
 }
 
-.footerleftbottom,.footerrightbottom{
+.footerleftbottom,
+.footerrightbottom {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.footertop a{
+.footertop a {
   text-decoration: none;
   color: black;
   font-size: 26px;
 }
 
-.footertop p{
+.footertop p {
   font-size: 32px;
 }
 
-
-
-.footerbottom{
+.footerbottom {
   height: 40%;
   display: flex;
   justify-content: space-between;
-  align-items:flex-end ;
+  align-items: flex-end;
 }
 
-
-.footerbottom p{
-    font-size: 24px;
+.footerbottom p {
+  font-size: 24px;
 }
 
 /* --------------------------------------------------------overlay------------------------------------------------------ */
