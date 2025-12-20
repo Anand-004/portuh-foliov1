@@ -188,51 +188,54 @@ a {
 }
 
 .homescroll {
-  width: 100%;
-  height: 50px;
-  background-color: black;
-  border: solid black;
-  color: white;
-  border-width: 4px 0px;
-  /* padding: 5px; */
-  display: flex;
-  align-items: center;
-  margin: 20px 0 0 0;
+ width: 100%;
+ height: 60px;
+ margin-top: 20px;
+ background-color: black;
+ color: white;
+ padding: 10px;
+ /* display: flex;
+ justify-content: center; */
+
+}
+
+.wrapper{
+  padding: 4px 0;
+  font-size: 20px;
+  
   
 }
 
-.marq {
-  /* font-family: "Jersey 10", sans-serif;
-  font-size: 24px;
-  font-style: normal; */
-  /* font-weight:lighter; */
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+.marquee-text{
+  overflow:hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  /* background-color: bisque; */
 }
 
-/* .marq  h2 {
-  width:130px;
-  background-color: blueviolet;
-  overflow: hidden;
-  transform: translateX(-90%);
-  animation: scroll-right 10s linear infinite;
-  white-space: nowrap
+.marquee-text-track{
+   display: flex;
+  white-space: nowrap;
+  gap: 100px;
+  width: max-content;
+  animation: marquee-move-text 20s linear infinite;
+  padding-left: 100px;
 }
 
-@keyframes scroll-right {
-  from {
-    transform: translateX(-90%);
-  }
+.marquee-text p{
+  border: 2px solid white;
+  border-radius: 99px;
+  padding: 5px 10px;
 
-  to {
-    transform: translateX(90%);
+}
+
+@keyframes marquee-move-text{
+  from{
+    transform: translateX(0);
   }
-} */
+  to{
+    transform: translateX(-100%);
+  }
+}
+
 
 .homebuttons {
   width: 100%;
@@ -241,6 +244,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 24px;
 }
 
 .homebuttons button {
@@ -392,7 +396,8 @@ a {
   background-color:bisque;
 } */
 
-.skillstab ,.xptab {
+.skillstab,
+.xptab {
   width: 50%;
   height: 100%;
   /* background-color: bisque; */
@@ -405,10 +410,9 @@ a {
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
-.xptab{
- 
-min-width: 30%;
-max-width: 50%;
+.xptab {
+  min-width: 30%;
+  max-width: 50%;
 }
 
 .skillstopbuttons {
@@ -419,7 +423,7 @@ max-width: 50%;
   height: 20px;
 }
 
-.skillstabbottom{
+.skillstabbottom {
   height: 93%;
   width: 100%;
   /* background-color: cadetblue; */
@@ -430,8 +434,7 @@ max-width: 50%;
   padding: 10px;
 }
 
-
-.filescontent{
+.filescontent {
   width: 90%;
   height: 90%;
   /* background-color: cornsilk; */
@@ -441,29 +444,29 @@ max-width: 50%;
   font-size: 20px;
 }
 
-.fileicon{
+.fileicon {
   width: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.fileicon img{
+.fileicon img {
   width: 100%;
 }
-.qualitiescontent{
+.qualitiescontent {
   width: 90%;
   text-align: center;
 }
-.qualitiescontent li{
+.qualitiescontent li {
   font-size: 24px;
 }
-.qualitiescontent li:hover{
-  font-size: 26px;
+.qualitiescontent li:hover {
+  font-size: 28px;
   color: gold;
 }
 
-.educationcontent{
+.educationcontent {
   width: 100%;
   height: 100%;
   display: flex;
@@ -472,37 +475,37 @@ max-width: 50%;
   /* background-color: crimson; */
 }
 
-.ug{
+.ug {
   /* background-color: darkkhaki; */
   padding: 10px;
   font-size: 22px;
 }
 
-.ugtop{
+.ugtop {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
   border-bottom: 2px solid black;
 }
 
-.ugbottom{
+.ugbottom {
   display: flex;
   justify-content: space-between;
 }
-.ruler hr{
+.ruler hr {
   border: 2px solid black;
 }
 
-.skillmarquee{
+.skillmarquee {
   width: 90%;
   overflow: hidden;
   /* background-color: cornflowerblue; */
-    white-space:nowrap;
-    position: relative;
-
+  white-space: nowrap;
+  position: relative;
 }
 
-.skillmarquee:before, .skillmarquee:after{
+.skillmarquee:before,
+.skillmarquee:after {
   position: absolute;
   top: 0;
 
@@ -511,38 +514,38 @@ max-width: 50%;
   z-index: 2;
   content: "";
 }
-.skillmarquee:before{
+.skillmarquee:before {
   left: 0;
-    background:linear-gradient(to left, transparent,rgb(255, 255, 255));
-
+  background: linear-gradient(to left, transparent, rgb(255, 255, 255));
 }
-.skillmarquee:after{
+.skillmarquee:after {
   right: 0;
-    background:linear-gradient(to right, transparent,rgb(255, 255, 255));
-
+  background: linear-gradient(to right, transparent, rgb(255, 255, 255));
 }
 
-.skill-slide{
+.skill-slide {
   display: inline-block;
   animation: slide 20s infinite linear;
   /* display: flex;
   flex-wrap: nowrap; */
-
 }
 
-.skill-slide img{
-     height: 120px;
-     margin: 0 40px;
+.skill-slide img {
+  height: 120px;
+  margin: 0 40px;
 }
 
-.skillmarquee:hover .skill-slide{
+.skillmarquee:hover .skill-slide {
   animation-play-state: paused;
 }
 
-
-@keyframes slide{
-  from{transform: translateX(0);}
-  to{transform: translateX(-100%);}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 /* -----------------------------------------------------------Contact Section--------------------------------------------- */
 
@@ -551,7 +554,7 @@ max-width: 50%;
   height: 100vh;
   /* background-color: plum; */
   display: flex;
-  background-image:url(bg4.jpg);
+  background-image: url(bg4.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
