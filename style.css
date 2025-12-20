@@ -31,7 +31,7 @@ a {
 /* ----------------------------------------------------------------------- navbar ----------------------------------------------------------------- */
 
 #navbar {
-  z-index: 1;
+  z-index: 999;
   top: 0;
   position: fixed;
   width: 100%;
@@ -123,12 +123,15 @@ a {
   justify-content: flex-end;
   align-items: center;
   /* padding-bottom: 60px; */
+  background-image: url(bg2.jpg);
+  /* background-attachment: fixed; */
+  background-size: cover;
 }
 
 .homecontent {
   width: 95%;
   height: 400px;
-  /* background-color: beige; */
+  background-color: white;
   border-radius: 50px;
   border: 2px solid black;
   display: flex;
@@ -194,7 +197,8 @@ a {
   /* padding: 5px; */
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
+  
 }
 
 .marq {
@@ -233,7 +237,7 @@ a {
 .homebuttons {
   width: 100%;
   height: 100px;
-  /* background-color: blueviolet; */
+  background-color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -338,7 +342,7 @@ a {
   width: 100%;
   /* background-color: aqua; */
   padding: 5px;
-  /* position: relative; */
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -388,7 +392,7 @@ a {
   background-color:bisque;
 } */
 
-.skillstab {
+.skillstab ,.xptab {
   width: 50%;
   height: 100%;
   /* background-color: bisque; */
@@ -401,6 +405,12 @@ a {
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
+.xptab{
+ 
+min-width: 30%;
+max-width: 50%;
+}
+
 .skillstopbuttons {
   width: 70px;
 }
@@ -409,6 +419,131 @@ a {
   height: 20px;
 }
 
+.skillstabbottom{
+  height: 93%;
+  width: 100%;
+  /* background-color: cadetblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jersey 10", sans-serif;
+  padding: 10px;
+}
+
+
+.filescontent{
+  width: 90%;
+  height: 90%;
+  /* background-color: cornsilk; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}
+
+.fileicon{
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fileicon img{
+  width: 100%;
+}
+.qualitiescontent{
+  width: 90%;
+  text-align: center;
+}
+.qualitiescontent li{
+  font-size: 24px;
+}
+.qualitiescontent li:hover{
+  font-size: 26px;
+  color: gold;
+}
+
+.educationcontent{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* background-color: crimson; */
+}
+
+.ug{
+  /* background-color: darkkhaki; */
+  padding: 10px;
+  font-size: 22px;
+}
+
+.ugtop{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+.ugbottom{
+  display: flex;
+  justify-content: space-between;
+}
+.ruler hr{
+  border: 2px solid black;
+}
+
+.skillmarquee{
+  width: 90%;
+  overflow: hidden;
+  /* background-color: cornflowerblue; */
+    white-space:nowrap;
+    position: relative;
+
+}
+
+.skillmarquee:before, .skillmarquee:after{
+  position: absolute;
+  top: 0;
+
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  content: "";
+}
+.skillmarquee:before{
+  left: 0;
+    background:linear-gradient(to left, transparent,rgb(255, 255, 255));
+
+}
+.skillmarquee:after{
+  right: 0;
+    background:linear-gradient(to right, transparent,rgb(255, 255, 255));
+
+}
+
+.skill-slide{
+  display: inline-block;
+  animation: slide 20s infinite linear;
+  /* display: flex;
+  flex-wrap: nowrap; */
+
+}
+
+.skill-slide img{
+     height: 120px;
+     margin: 0 40px;
+}
+
+.skillmarquee:hover .skill-slide{
+  animation-play-state: paused;
+}
+
+
+@keyframes slide{
+  from{transform: translateX(0);}
+  to{transform: translateX(-100%);}
+}
 /* -----------------------------------------------------------Contact Section--------------------------------------------- */
 
 #contact {
@@ -416,6 +551,9 @@ a {
   height: 100vh;
   /* background-color: plum; */
   display: flex;
+  background-image:url(bg4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .contactleft {
