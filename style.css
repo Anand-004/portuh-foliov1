@@ -549,7 +549,7 @@ a {
   height: 100vh;
   /* background-color: plum; */
   display: flex;
-  background-image: url(/img/bg4.jpg);
+  background-image: url(img/bg4.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
