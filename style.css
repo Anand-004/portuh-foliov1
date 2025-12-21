@@ -123,7 +123,7 @@ a {
   justify-content: flex-end;
   align-items: center;
   /* padding-bottom: 60px; */
-  background-image: url(/img/bg2.jpg);
+  background-image: url(img/bg2.jpg);
   /* background-attachment: fixed; */
   background-size: cover;
 }
