@@ -1,14 +1,14 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
 
-a {
-  text-decoration: none;
-  color: black;
-}
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
 .jersey-10-regular {
   font-family: "Jersey 10", sans-serif;
