@@ -117,10 +117,16 @@ a {
     overflow: hidden;
     padding-bottom: 10px;
     border: 2px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .project-img img{
     width: 100%;
+    /* margin: auto; */
+        
+
 }
 
 .project-name{
@@ -137,22 +143,42 @@ a {
     border-bottom: 1px solid black;
 }
 
+
+
 .card-foo{
     width: 100%;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .islive{
-    border: 2px solid black;
+    border: 2px solid green;
     padding: 5px 20px;
     border-radius: 20px;
 }
 
+.islive a{
+    color: green;
+}
+
+.notlive{
+
+    border: 2px solid red;
+    color: red;
+    padding: 5px 20px;
+    border-radius: 20px;
+
+}
+
 .project-link{
-    border: 1px solid black;
-    padding: 5px 10px;
+    border: 2px solid black;
+    padding: 10px 10px;
+}
+.project-link:hover{
+    color: white;
+    background-color: black;
 }
 
 #certificate-case{
